@@ -1,0 +1,13 @@
+<ng-container *ngFor="let blog of blogs$ | async">
+  <a class="link" [routerLink]="blog.route">
+    <mat-card>
+      <mat-card-title>{{ blog.title || blog.route }}</mat-card-title>
+      <mat-card-subtitle>
+        {{ blog.date | date: 'fullDate' }}
+      </mat-card-subtitle>
+      <mat-card-content>
+        <p>{{ blog.description }}</p>
+      </mat-card-content>
+    </mat-card>
+  </a>
+</ng-container>

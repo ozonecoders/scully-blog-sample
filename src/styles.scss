@@ -1,4 +1,5 @@
 @import '~normalize.css';
+@import '~highlight.js/scss/vs2015.scss';
 @import '~@angular/material/theming';
 
 @include mat-core();
@@ -7,11 +8,46 @@
 
 @include angular-material-theme($app-theme);
 
+html {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
 html,
 body {
   height: 100%;
+  background-color: mat-color($app-primary);
 }
+
 body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+pre > code[class*='language-'] {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5rem;
+  color: #abb2bf;
+  border-radius: 2px;
+  background-color: #282c34;
+}
+
+blockquote {
+  margin: 1em 40px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #eeeeee;
+
+  @media (max-width: 599px) {
+    margin: 1em 0px;
+  }
 }
