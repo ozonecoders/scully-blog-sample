@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
-import { FooterComponent, HeaderComponent } from './components';
+import { FooterComponent, HeaderComponent, MainComponent } from './components';
 import { RouterModule } from '@angular/router';
 
-const components = [FooterComponent, HeaderComponent];
+const components = [FooterComponent, HeaderComponent, MainComponent];
 
 @NgModule({
   imports: [CommonModule, RouterModule, MatButtonModule, MatToolbarModule],
