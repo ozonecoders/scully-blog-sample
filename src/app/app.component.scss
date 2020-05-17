@@ -4,7 +4,7 @@
     'header' 64px
     'main' 1fr
     'footer' 64px / 1fr;
-  min-height: 100vh;
+  min-height: calc(100vh - env(safe-area-inset-top));
 
   @media (max-width: 599px) {
     grid-template:
