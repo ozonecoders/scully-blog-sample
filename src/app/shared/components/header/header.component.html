@@ -1,6 +1,8 @@
 <header>
   <mat-toolbar color="primary">
-    <a class="title" routerLink="/">Sample</a>
+    <a class="title" routerLink="/">
+      <ng-content></ng-content>
+    </a>
     <span class="spacer"></span>
     <a mat-button routerLink="/home">Home</a>
     <a mat-button routerLink="/blog">Blog</a>
