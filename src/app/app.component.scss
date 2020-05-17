@@ -14,26 +14,12 @@
   }
 }
 
-app-header,
-app-main,
-app-footer {
-  margin-left: calc(-1 * env(safe-area-inset-left));
-  margin-right: calc(-1 * env(safe-area-inset-right));
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
-}
-
 app-header {
   grid-area: header;
-  position: sticky;
-  top: env(safe-area-inset-top);
-  z-index: 10;
 }
 
 app-main {
   grid-area: main;
-  min-width: 0px;
-  background-color: #fafafa;
 }
 
 app-footer {
